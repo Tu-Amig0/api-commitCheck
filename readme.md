@@ -14,7 +14,7 @@ El sistema requiere un **login**, mediante el cual cada usuario podrá acceder a
 |------|------|-------------|
 | `id` | INT / UUID | Identificador único del usuario |
 | `username` / `email` | VARCHAR | Credenciales utilizadas para el acceso al sistema |
-| `password_hash` | VARCHAR | Contraseña almacenada de forma segura mediante hash |
+| `password` | VARCHAR | Contraseña almacenada de forma segura mediante hash |
 | `created_at` | DATETIME | Fecha en la que se registró el usuario |
 
 Esta tabla permite **gestionar la autenticación y el acceso al sistema**, asegurando que cada usuario tenga sus propios registros y análisis asociados.
