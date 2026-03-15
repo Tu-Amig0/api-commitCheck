@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+gitpython
+requests
+radon
+joblib
+fastapi
+uvicorn[standard]
+pydantic
