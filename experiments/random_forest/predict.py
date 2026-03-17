@@ -15,12 +15,13 @@ import numpy as np
 import pandas as pd
 from git import Repo
 
-MODEL_PATH   = os.path.abspath(os.path.join(os.path.dirname(__file__), "../model/random_forest.pkl"))
-COLUMNS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../model/feature_columns.pkl"))
+MODEL_PATH   = os.path.abspath(os.path.join(os.path.dirname(__file__), "../random_forest/model/random_forest.pkl"))
+COLUMNS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "../random_forest/model/feature_columns.pkl"))
 
 
 def load_model():
     if not os.path.exists(MODEL_PATH):
+        print(MODEL_PATH)
         print("ERROR: No trained model found.")
         print("Please run `python scripts/train.py` first.")
         sys.exit(1)
